@@ -1065,3 +1065,9 @@ a.underlined:hover:before, .main-navigation a:hover:before, .collections-navigat
 	left: 66px;
 	display: none;
 }
+
+
+#content{
+	margin: 0 auto;
+	width: 960px;
+}

@@ -34,7 +34,7 @@ jQuery(document).ready(function() {
         }, 250, function() {});
         }
     });*/
-/*    var mouseenterActive = false;
+	/*var mouseenterActive = false;
     $("body").on('mouseenter','.collections-navigation',function () {
         if (!mouseenterActive) {
             mouseenterActive = true;
@@ -55,13 +55,13 @@ jQuery(document).ready(function() {
         return;
     });*/
     jQuery(".collections-navigation").hover(function() {
-        console.log("hover")
+        console.log("hover");
         jQuery(this).find('.menu').animate({
             width : 'toggle',
             opacity : 'toggle'
         }, 250, function() {
         });
-    })
+    });
     jQuery("body").on("click", ".lbox-img", function(a) {
         jQuery.backstretch([jQuery(this).attr('src')], {
             speed : 1500
