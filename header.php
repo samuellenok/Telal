@@ -39,7 +39,7 @@ if(!isset($_GET['rel'])) {
 	<div id="content" class="site-content container-fluid">
 <?php
 }
-?>		
+?>		<div>
 		<nav id="collections-navigation" class="collections-navigation" role="navigation">
 			<button class="menu-toggle" aria-controls="collections-menu" aria-expanded="false">
 			<?php esc_html_e( 'Collections', 'telal' ); ?>
