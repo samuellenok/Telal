@@ -45,6 +45,7 @@ function telal_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary Menu', 'telal' ),
+		'collections-menu' => esc_html__( 'Collections Menu', 'telal' ),
 	) );
 
 	/*

@@ -10,9 +10,6 @@
  */
 
 ?>
-<?php
-if(!isset($_GET['rel'])) {
-?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -37,12 +34,9 @@ if(!isset($_GET['rel'])) {
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content container-fluid">
-<?php
-}
-?>		<div>
 		<nav id="collections-navigation" class="collections-navigation" role="navigation">
 			<button class="menu-toggle" aria-controls="collections-menu" aria-expanded="false">
 			<?php esc_html_e( 'Collections', 'telal' ); ?>
 			</button>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+			<?php wp_nav_menu( array( 'theme_location' => 'collections-menu', 'menu_id' => 'collections-menu' ) ); ?>
 		</nav><!--#collections-navigation-->

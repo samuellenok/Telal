@@ -78,7 +78,7 @@ jQuery(document).ready(function() {
     jQuery("body").on("click", "img.close", function(a) {
         jQuery(this).parents('div.transparant-bg-content').css('visibility', 'hidden');
     });
-    jQuery("body").on("click", "a", function(e){
+    /*jQuery("body").on("click", "a", function(e){
         e.preventDefault();
         if(jQuery(this).attr('href').substring(0, 1)!="#"&&!jQuery(this).hasClass('no-ajax-loading')&&!jQuery(this).attr('no-ajax-loading')){
             jQuery("body").addClass("loading");
@@ -106,7 +106,7 @@ jQuery(document).ready(function() {
         }else{
             window.location.href=jQuery(this).attr('href');
         }
-    });
+    });*/
     $('body').on('keyup',' #interact-search-form input',function(e){
         e.preventDefault();
         var q=$(this).val();
