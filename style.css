@@ -993,7 +993,7 @@ a.underlined:hover:before, .main-navigation a:hover:before, .collections-navigat
 	position: fixed;
 	width: 100%;
 	bottom:0;
-	padding: 10px;
+	padding: 0px;
 	border-top: 1px solid #0F0E0E;
 }
 /*--------------------------------------------------------------
@@ -1016,7 +1016,11 @@ a.underlined:hover:before, .main-navigation a:hover:before, .collections-navigat
 /*--------------------------------------------------------------
 # Collections Navigation
 --------------------------------------------------------------*/
-
+.collections-navigation {
+	width: 100%;
+	height: 50px;
+	cursor:pointer;
+}
 .collections-navigation ul> li > a {
 	color: #FFF;
 	background: 0 0;
@@ -1058,16 +1062,18 @@ a.underlined:hover:before, .main-navigation a:hover:before, .collections-navigat
 	color: #FFF;
 	border-radius: 0px;
 	position: absolute;
+	z-index: 999;
 }
 
 #collections-navigation .menu{
-  	position: absolute;
-	left: 66px;
 	display: none;
+	position: absolute;
+	overflow: hidden;
+	z-index: 99;
 }
 
 
-#content{
-	margin: 0 auto;
-	width: 960px;
+.site-main{
+	background: rgba(153, 153, 153, 0.7) none repeat scroll 0% 0;
+	padding: 15px;
 }

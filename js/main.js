@@ -54,12 +54,20 @@ jQuery(document).ready(function() {
         }
         return;
     });*/
-    jQuery(".collections-navigation").hover(function() {
+    $(document).on('mouseenter',".collections-navigation",function() {
         console.log("hover");
+        //if(jQuery(this).find('.menu').position().left == 0)
         jQuery(this).find('.menu').animate({
-            width : 'toggle',
-            opacity : 'toggle'
-        }, 250, function() {
+            opacity : 'toggle',
+            left:'85'
+        }, 1500, function() {
+        });
+        //else
+    }).on('mouseleave',".collections-navigation",function() {
+    	jQuery(this).find('.menu').animate({
+            opacity : 'toggle',
+            left:'-90'
+        }, 500, function() {
         });
     });
     jQuery("body").on("click", ".lbox-img", function(a) {
