@@ -11,16 +11,9 @@
  *
  * @package Telal
  */
-if(!isset($_GET['rel'])) {
 get_header();
-} ?>
+?>
 	<div id="primary" class="content-area">
-		<nav id="collections-navigation" class="collections-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="collections-menu" aria-expanded="false">
-			<?php esc_html_e( 'Collections', 'telal' ); ?>
-			</button>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-		</nav><!--#collections-navigation-->
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
@@ -58,4 +51,4 @@ get_header();
 	</div><!-- #primary -->
 
 <?php get_sidebar(); ?>
-<?php if(!isset($_GET['rel'])) {get_footer();} ?>
+<?php get_footer();?>

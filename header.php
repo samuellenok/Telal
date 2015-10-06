@@ -9,7 +9,11 @@
  * @package Telal
  */
 
-?><!DOCTYPE html>
+?>
+<?php
+if(!isset($_GET['rel'])) {
+?>
+<!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
@@ -33,3 +37,12 @@
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content container-fluid">
+<?php
+}
+?>		
+		<nav id="collections-navigation" class="collections-navigation" role="navigation">
+			<button class="menu-toggle" aria-controls="collections-menu" aria-expanded="false">
+			<?php esc_html_e( 'Collections', 'telal' ); ?>
+			</button>
+			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+		</nav><!--#collections-navigation-->

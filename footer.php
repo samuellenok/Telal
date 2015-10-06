@@ -10,7 +10,10 @@
  */
 
 ?>
-
+</div>
+<?php
+if(!isset($_GET['rel'])) {
+?>
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
@@ -30,3 +33,6 @@
 
 </body>
 </html>
+<?php
+}
+?>
